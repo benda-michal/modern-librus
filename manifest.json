@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Modern Librus",
+  "version": "1.0",
+
+  "description": "Automatyczne przekierowanie do nowej wersji dziennika Librus.",
+  "author": "Michał Benda",
+
+  "content_scripts": [
+    {
+      "matches": ["https://synergia.librus.pl/uczen/index"],
+      "js": ["index.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
